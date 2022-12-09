@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome-ie7.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive tour and travel Website</title>
+
+</head>
+<body> 
+    <!-- Start Nvaigation Menu -->
+<div class="Navbar">
+    <div class="menu-bar"><i class="fa-solid fa-bars" onclick="openmenu()" id="menu"></i></div>
+    <div class="logo"><a href="" id="home"><b>T</b>RAVEL</a></div>
+    
+    <nav id="navbar" class="at-item ">
+        <ul>
+            <li><a href="#top" onclick="openmenu()">Home</a></li>
+            <li><a href="#book" onclick="openmenu()">Book</a></li>
+            <li><a href="#packages" onclick="openmenu()">Packages</a></li>
+            <li><a href="#services" onclick="openmenu()">Services</a></li>
+            <li><a href="#gallery" onclick="openmenu()">Gallery</a></li>
+            <li><a href="#review" onclick="openmenu()">Review</a></li>
+            <li><a href="#contact" onclick="openmenu()">Contact</a></li>
+           
+        </ul>
+    </nav>
+    <div class="icons">
+   <span><i class="fa-solid fa-magnifying-glass" onclick="openform()"></i></span>
+   <span><i class="fa-solid fa-user" onclick="showForm()"></i></span>
+    </div>
+    <div class="search-form" id="searchForm">
+        <input type="text" name="" id="search-form">
+        <label for="search-form" class="fas fa-search"></label>
+    </div>
+<div class="login-form" id="loginForm">
+    <i class="fa-solid fa-xmark" onclick="hideForm()"></i>
+    <div class="content-1 text-center">
+        <h3>LOGIN</h3>
+        <form action="">
+            <input type="text" placeholder="enter your email">
+            <input type="password" placeholder="enter your password">
+            <button><a href="">Login Now</a></button>
+            <div class="checkbox"><input type="checkbox" name="" id="">Remember me</div>
+            <div><p>forget Password? <a href="">Click Here</a></p></div>
+            <div><p>Don't Have And Account? <a href="">Register Now</a></p></div>
+        </form>
+    </div>
+    
+</div>
+</div>
+
+<!-- End Nvaigation Menu -->
+<!-- start header -->
+<div class="header" id="top">
+
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <video autoplay muted loop>
+            <source src="Videos/vid-1.mp4" type="video/mp4">
+            </video>  
+            <div class="swiper-content">
+               <div class="content text-center">
+                <h1>ADVENTURE IS WORTHWILE</h1>
+                <button>Discover More</button>
+               </div>    
+            </div>
+            </div>
+            <div class="swiper-slide">
+            <video autoplay muted loop>
+            <source src="Videos/vid-2.mp4" type="video/mp4">
+            </video>  
+            <div class="swiper-content">
+                <div class="content text-center">
+                 <h1>ADVENTURE IS WORTHWILE</h1>
+                 <button>Discover More</button>
+                </div>    
+             </div>
+            </div>
+            <div class="swiper-slide">
+            <video autoplay muted loop>
+            <source src="Videos/vid-3.mp4" type="video/mp4">
+            </video>  
+            <div class="swiper-content">
+                <div class="content text-center">
+                 <h1>ADVENTURE IS WORTHWILE</h1>
+                 <button>Discover More</button>
+                </div>    
+             </div>
+            </div>
+            <div class="swiper-slide">
+            <video autoplay muted loop>
+            <source src="Videos/vid-4.mp4" type="video/mp4">
+            </video>  
+            <div class="swiper-content">
+                <div class="content text-center">
+                 <h1>ADVENTURE IS WORTHWILE</h1>
+                 <button>Discover More</button>
+                </div>    
+             </div>
+            </div>
+            <div class="swiper-slide">
+            <video autoplay muted loop>
+            <source src="Videos/vid-5.mp4" type="video/mp4">
+            </video>  
+            <div class="swiper-content">
+                <div class="content text-center">
+                 <h1>ADVENTURE IS WORTHWILE</h1>
+                 <button>Discover More</button>
+                </div>    
+             </div>
+            </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+</div>
+<!-- end header -->
+<!-- start book -->
+<section id="book" class="book">
+<div class="text-center">
+    <span>B</span>
+    <span>O</span>
+    <span>O</span>
+    <span>K</span>
+        &nbsp;
+        
+    <span>N</span>
+    <span>O</span>
+    <span>W</span> 
+</div>  
+<div class="row">
+<div class="col-md-6">
+    <div class="">
+        <img src="images/book-img.svg" alt="">
+    </div>
+</div>
+<div class="col-md-6">
+    <div class="book-box book-box-1 ">
+       <label for="place"><b>Where To</b></label>
+       <input type="text" placeholder="place name" id="place">
+       <label for="place"><b>How Many</b></label>
+       <input type="number" placeholder="number of guests" id="place">
+       <label for="place"><b>Where To</b></label>
+       <input type="date" placeholder="place" id="place">
+       <label for="place"><b>Leaving</b></label>
+       <input type="date" placeholder="place" id="place">
+       <div class=""><button><a href="">Book Now</a></button></div>
+    </div>
+    
+</div>
+</div> 
+</section>
+<!-- end book -->
+<!-- start packages -->
+<section id="packages" class="packages container">
+<div class="text-center">
+    <span>P</span>
+    <span>A</span>
+    <span>C</span>
+    <span>K</span>
+    <span>A</span>
+    <span>G</span>
+    <span>E</span> 
+    <span>S</span> 
+</div>
+<div class="row">
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Mumbai</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Hawaii</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Sydney</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Paris</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Tokyo</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="packages-box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="packages-content">
+            <div class="location"><h3><i class="fas fa-map-marker-alt"></i>Egypt</h3></div>
+            <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+            <h4>$90.00 <span> $120.00</span></h4>
+            <button>Book Now</button>
+            </div>
+            </div>
+            </div>
+</div>
+</section>
+<!-- end packages -->
+<!-- start services -->
+<section id ="services" class="services container">
+<div class="text-center">
+    <span>S</span>
+    <span>E</span>
+    <span>R</span>
+    <span>V</span>
+    <span>I</span>
+    <span>C</span>
+    <span>E</span>
+    <span>S</span>
+</div>
+<div class="row">
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center"> <i class="fas fa-hotel"></i></div>
+        <h3 class="text-center">Affordable Hotels</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center">  <i class="fas fa-utensils"></i></div>
+        <h3 class="text-center">food and drinks</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center"> <i class="fas fa-bullhorn"></i></div>
+        <h3 class="text-center">Safety guide</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center"><i class="fas fa-globe-asia"></i></div>
+        <h3 class="text-center">Around the globe</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center">  <i class="fas fa-plane"></i></div>
+        <h3 class="text-center">Fastest travel</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+        <div class="col-md-4">
+        <div class="services-box">
+        <div class="icon text-center"><i class="fas fa-hiking"></i></div>
+        <h3 class="text-center">Adventures</h3>
+        <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur, 
+        Adipisicing Elit. Inventore Commodi Earum,
+        Quis Voluptate Exercitationem Ut Minima Itaque
+        Iusto Ipsum Corrupti!</p>
+        </div>
+        </div>
+</div>
+</section>
+<!-- end  services -->
+<!-- start gallery -->
+<section id="gallery" class="gallery container">
+    <div class="text-center">
+        <span>G</span>
+        <span>A</span>
+        <span>L</span>
+        <span>L</span>
+        <span>E</span>
+        <span>R</span>
+        <span>Y</span>
+    </div>
+    <div class="row">
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-1">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-2">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-3">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-4">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-5">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+            <div class="col-md-4">
+            <div class="gallery-box gallery-box-6">
+            <div class="content text-center">
+            <h3 class="text-center">Amazing places</h3>
+            <p class="text-center">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ducimus, Tenetur.</p>
+            <button>See More</button>
+            </div>
+            </div>
+            </div>
+    </div>
+</section>
+<!-- end gallery -->
+<!-- start review-->
+<section class="review" id="review">
+    <div class="text-center">
+        <span>R</span>
+        <span>E</span>
+        <span>V</span>
+        <span>I</span>
+        <span>E</span>
+        <span>W</span>
+    </div>
+    <div class="review-carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container text-center">
+                    <img src="images/pic1.png" alt="">
+                    <h4>Morgan-1</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus 
+                        Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias
+                         Consectetur Ducimus Beatae, Reprehenderit Exercitationem! </p>
+                         <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                    <img src="images/pic2.png" alt="">
+                    <h4>Morgan-2</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus 
+                        Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias
+
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            </div>                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                    <img src="images/pic3.png" alt="">
+                    <h4>Morgan-3</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus 
+                        Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias
+                         Consectetur Ducimus Beatae, Reprehenderit Exercitationem! </p>
+                         <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container text-center">
+                    <img src="images/pic4.png" alt="">
+                    <h4>Morgan-4</h4>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. 
+                        Ipsa Adipisci Quisquam Sunt Nesciunt Fugiat Odit Minus 
+                        Illum Asperiores Dolorum Enim Sint Quod Ipsam Distinctio Molestias
+                         Consectetur Ducimus Beatae, Reprehenderit Exercitationem! </p>
+                         <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+</section>
+<!-- end review -->
+<!-- start contact-->
+<section id="contact" class="contact container">
+    <div class="text-center">
+        <span>C</span>
+        <span>O</span>
+        <span>N</span>
+        <span>T</span>
+        <span>A</span>
+        <span>C</span>
+        <span>T</span>
+        <span>S</span>
+    </div>
+<div class="row row-1">
+    <div class="col-md-5">
+        <img src="images/contact-img.svg" alt="">
+    </div>
+    <div class="col-md-7">
+        <div class="contact-box">
+       <form action="">
+        <div class="row">
+            <div class="col-md-6 col-sm-12"><input type="text" name="" id="" placeholder="name"></div>
+            <div class="col-md-6 col-sm-12"><input type="email" name="" id="" placeholder="email"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6"><input type="number" name="" id="" placeholder="number"></div>
+            <div class="col-md-6"><input type="text" name="" id="" placeholder="subject"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12"><textarea name="" id="" cols="30" rows="6" placeholder="Write Your Message"></textarea></div> 
+        </div>
+        <button>Submit</button>
+        
+    </form>
+</div>
+    </div>
+</div>    
+</section>
+<!-- end contact-->
+<!-- end brand-->
+<section class="brand"></section>
+   
+    <div class="swiper1 mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+        </div>
+      </div>
+</section>
+<!-- end brand-->
+
+<!-- start footer -->
+<div class="footer ">
+<div class="container">
+    <div class="row">
+                <div class="col-md-3">
+                <div class="footer-box">
+                <h4>About Us</h4>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit.
+                Assumenda Quas Magni Pariatur Est Accusantium Voluptas Enim Nemo
+                Facilis Sit Debitis.</p>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="footer-box">
+                <h4>Branch Locations</h4>
+                        <ul>
+                        <li><a href="">USA</a></li>
+                        <li><a href="">India</a></li>
+                        <li><a href="">Japan</a></li>
+                        <li><a href="">France</a></li>
+                        </ul>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="footer-box">
+                <h4>Important Links</h4>
+                        <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#book">Book</a></li>
+                        <li><a href="#packages">Packages </a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#review">Review</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        </ul>
+                </div>
+                </div>
+                <div class="col-md-3">
+                <div class="footer-box">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Twitter</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Linkedin</a></li>
+                    </ul>
+                </div>
+                </div>
+    </div>
+</div>
+<span class="text-center"><p>Created By Mr. <i>Abdilatif Mohamud</i> | All Rights Reserved!</p></span>
+</div>
+<!-- end  footer -->
+<!-- Javscript Toggole menus -->
+<script>
+    var navbar = document.getElementById('navbar');
+    var menu = document.getElementById('menu');
+    var loginForm = document.getElementById('loginForm');
+    var searchForm = document.getElementById('searchForm');
+
+
+    function openmenu(){
+        navbar.classList.toggle('navbar-display');
+        menu.classList.toggle('fa-times');
+
+    }
+    function showForm(){
+        loginForm.style.top='70px'; 
+        
+    }
+    function hideForm(){
+         loginForm.style.top='-1000px'; 
+       
+    }
+    function openform(){
+        searchForm.classList.toggle('search-form-display');
+    }
+</script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+   <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "1",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+    </script>
+    
+    <!-- Initialize Swiper for brands-->
+    <script>
+      var swiper1 = new Swiper(".swiper1", {
+        slidesPerView: 6,
+        spaceBetween: 10,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false
+        }
+      });
+    </script>
+</body>
+</html>
